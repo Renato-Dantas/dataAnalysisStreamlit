@@ -5,7 +5,7 @@ from aboutMe import *
 
 st.set_page_config( page_title= 'Stock Price Analysis', page_icon= 'logo.png')
  
-st.sidebar.info('# Navigation Sidebar')
+#st.sidebar.info('# Navigation Sidebar')
 
 pag = st.sidebar.radio('Select a page',['Data Analysis','Machine Learning','About Me'], index = 0)
 
