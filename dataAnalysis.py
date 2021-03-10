@@ -57,7 +57,7 @@ def last_value(data):
         day.append(str(i))
     lastdate = day[0].split(' ')
     lastdate = lastdate[0]
-    st.info(f'The last value founded is $ {lastValue} on {lastdate}')
+    st.info(f'The last value found is $ {lastValue} on {lastdate}')
 
 def percent(data):
     try:
@@ -68,12 +68,12 @@ def percent(data):
         else:
             st.error(f'Stock Price decrease {percent}%')
     except:
-        st.error('No data in the selectioned period. Please choose another day to start the view') 
+        st.error('No data in the selected period. Please choose another day to start the view') 
         
 def avg_value(data):
     avg = round(data.Close.mean(),2)
     st.success(f'The average stock price is $ {avg} for the period')
 
 def dataAnalysisText():
-    st.markdown('This page is dedicated to show an **application of Data Science**, using the most popular libraries, that you can find in a list on the sidebar.\n\n First of all We need to **analyse the tendencies of the Stock Price**. To this, We used here the ***Plotly*** libraries, that permit you to **create iterative plots and dashboards**. \n\n You can find more information about plotly on: ***https://plotly.com*** \n\n Also We used ***Pandas*** to manipulate the data and We get the data using ***pandas_datareader*** to upload all info from Yahoo')
+    st.markdown('This page is dedicated to show an **application of Data Science**, using the most popular libraries.\n\n First of all, We need to **analyse the tendencies of the Stock Price**. To this, We used here the ***Plotly*** libraries, that permit you to **create iterative plots and dashboards**. \n\n You can find more information about plotly on: ***https://plotly.com*** \n\n Also We used ***Pandas*** to manipulate the data and We get the data using ***pandas_datareader*** to upload all info from Yahoo')
     st.markdown('Please select a **date to start** to view the plots and the **interested company** \n\n ***If you do not select a new date, the plot will be created starting in January 2020***')
